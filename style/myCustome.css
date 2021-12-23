@@ -1,0 +1,263 @@
+/* -------------------------------------------------------------------------- */
+/*                              Global Variables                              */
+/* -------------------------------------------------------------------------- */
+:root {
+  --mainColor: #06a6d0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+    padding: 0 0;
+}
+ul li {
+    padding: 0 0;
+}
+/* -------------------------------------------------------------------------- */
+/*                              Global Variables                              */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                    Fonts                                   */
+/* -------------------------------------------------------------------------- */
+
+/*OpenSans Semi Bold */
+@font-face {
+  font-family: "OpenSans SemiBold";
+  src: url(../Fonts/OpenSans-SemiBold.ttf);
+}
+/*OpenSans Regular */
+@font-face {
+  font-family: "OpenSans Regular";
+  src: url(../Fonts/OpenSans-Regular.ttf);
+}
+/* OpenSans Light */
+@font-face {
+  font-family: "OpenSans Light";
+  src: url(../Fonts/OpenSans-Light.ttf);
+}
+/* OpenSans Light Italic*/
+@font-face {
+  font-family: "OpenSans Light Italic";
+  src: url(../Fonts/OpenSans-LightItalic.ttf);
+}
+/* OpenSans Bold  */
+@font-face {
+  font-family: "OpenSans Bold";
+  src: url(../Fonts/OpenSans-Bold.ttf);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    Fonts                                   */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                  Start Nav                                 */
+/* -------------------------------------------------------------------------- */
+#navigation .container {
+  border-bottom: 1px solid white;
+  font-family: "OpenSans SemiBold";
+  font-size: 0.9rem;
+}
+#navigation ul li a {
+  color: white;
+}
+#navigation ul li:first-child a {
+  color: var(--mainColor) !important;
+}
+#navigation ul li a:hover {
+  transition: all 0.4s;
+  color: var(--mainColor) !important;
+  border-bottom: 1px solid var(--mainColor);
+}
+/* -------------------------------------------------------------------------- */
+/*                                  End Nav                                 */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                Start Header                                */
+/* -------------------------------------------------------------------------- */
+
+#header .carousel-inner .carousel-item {
+  transition: all 0.9s;
+}
+.carousel-indicators [data-bs-target] {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: all 0.8s;
+}
+/* -------------------------------------------------------------------------- */
+/*                                 End Header                                 */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                               Start Services                               */
+/* -------------------------------------------------------------------------- */
+.line{
+    width: 6rem;
+    height: 1.5px;
+    background: #000;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+}
+.line::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: white;
+    transform: translate(-50%,-50%);
+}
+.second-headding {
+    font-family: "OpenSans Light";
+    line-height: 1.8;
+}
+
+.special-bg {
+    background-color: #0f738f71;
+    
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                               END Services                               */
+/* -------------------------------------------------------------------------- */
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                 START ABOUT                                */
+/* -------------------------------------------------------------------------- */
+.adobe-percentage,
+.html-percentage,
+.js-percentage,
+.php-percentage{
+    background-color:#dedadc ;
+    height: 20px;
+    position: relative;
+}
+.adobe-percentage::after,
+.html-percentage::after,
+.js-percentage::after,
+.php-percentage::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    background-color:#06a6d0 ;
+    left: 0;
+}
+.adobe-percentage::after{
+width: 95%;
+}
+.html-percentage::after {
+    width: 93%;
+}
+.js-percentage::after {
+    width: 85%;
+}
+.php-percentage::after {
+    width: 87%;
+}
+/* -------------------------------------------------------------------------- */
+/*                                 End ABOUT                                */
+/* -------------------------------------------------------------------------- */
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                               Start Protfilio                              */
+/* -------------------------------------------------------------------------- */
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #0f748f;
+    transition: all 0.3s;
+}
+
+iframe {
+    width: 100%;
+    height: 100vh;
+}
+/* -------------------------------------------------------------------------- */
+/*                               End Protfilio                              */
+/* -------------------------------------------------------------------------- */
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                START TESTMO                                */
+/* -------------------------------------------------------------------------- */
+#testomo .carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: 15px;
+    transition: all 0.8s;
+    background-color: gray;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                END TESTMO                                */
+/* -------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                Start Pricing                               */
+/* -------------------------------------------------------------------------- */
+#pricing ul li{
+    padding: 20px 0;
+    margin-bottom: 15px !important;
+    border-bottom:  2px solid #0dcaf0;
+}
+/* -------------------------------------------------------------------------- */
+/*                                END Pricing                               */
+/* -------------------------------------------------------------------------- */
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                           Start Subscription Form                          */
+/* -------------------------------------------------------------------------- */
+
+.height-100 {
+    height: auto
+}
+
+.card {
+    width: 600px;
+    border: none;
+}
+
+.form-control {
+    height: 50px;
+    border: 2px solid #eee
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 2px solid #06a6d0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                           End Subscription Form                          */
+/* -------------------------------------------------------------------------- */
